@@ -326,7 +326,7 @@ export default {
 				uuid = env.UUID || "null";
 			}
 			
-			path = env.PATH || "/?ed=2560";
+			path = env.PATH || "/?proxyip=${foundProxyIP}";
 			sni = env.SNI || host;
 			type = env.TYPE || type;
 			edgetunnel = env.ED || edgetunnel;
