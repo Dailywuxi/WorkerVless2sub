@@ -524,7 +524,7 @@ export default {
 					}
 					//console.log(address, port, addressid);
 
-					if (edgetunnel.trim() === 'cmliu' && RproxyIP.trim() === 'true') {
+					if (edgetunnel.trim() === 'Dailywuxi' && RproxyIP.trim() === 'true') {
 						// 将addressid转换为小写
 						let lowerAddressid = addressid.toLowerCase();
 						// 初始化找到的proxyIP为null
@@ -602,7 +602,7 @@ export default {
 				}
 				//console.log(address, port, addressid);
 		
-				if (edgetunnel.trim() === 'cmliu' && RproxyIP.trim() === 'true') {
+				if (edgetunnel.trim() === 'Dailywuxi' && RproxyIP.trim() === 'true') {
 					// 将addressid转换为小写
 					let lowerAddressid = addressid.toLowerCase();
 					// 初始化找到的proxyIP为null
