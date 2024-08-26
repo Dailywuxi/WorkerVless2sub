@@ -326,7 +326,7 @@ export default {
 				uuid = env.UUID || "null";
 			}
 			
-			path = env.PATH || "proxyip.oracle.fxxk.dedyn.io";
+			path = env.PATH || "/?proxyip=proxyip.us.fxxk.dedyn.io";
 			sni = env.SNI || host;
 			type = env.TYPE || type;
 			edgetunnel = env.ED || edgetunnel;
