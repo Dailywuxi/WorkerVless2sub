@@ -6,12 +6,12 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
 	'icook.tw:2053#官方优选域名',
-	//'cloudflare.cfgo.cc#优选官方线路',
+	'cloudflare.cfgo.cc#优选官方线路',
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
 ];
 
@@ -37,7 +37,7 @@ let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/conf
 let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
-let RproxyIP = 'true';
+let RproxyIP = 'false';
 let proxyIPs = [//无法匹配到节点名就随机分配以下ProxyIP域名
 	'proxyip.multacom.fxxk.dedyn.io',
 	'proxyip.vultr.fxxk.dedyn.io',
@@ -326,7 +326,7 @@ export default {
 				uuid = env.UUID || "null";
 			}
 			
-			path = env.PATH || "/?proxyip=proxyip.oracle.fxxk.dedyn.io";
+			path = env.PATH || "/?ed=2560";
 			sni = env.SNI || host;
 			type = env.TYPE || type;
 			edgetunnel = env.ED || edgetunnel;
